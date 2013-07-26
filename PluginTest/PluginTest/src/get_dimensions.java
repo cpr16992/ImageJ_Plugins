@@ -3,7 +3,7 @@ import ij.ImagePlus;
 import ij.WindowManager;
 import ij.plugin.PlugIn;
 
-/**    
+/** Pops up the dimensions and number of voxels of the image
 */
 public class get_dimensions implements PlugIn 
 {
