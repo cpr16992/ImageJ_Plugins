@@ -23,8 +23,6 @@ public class get_dimensions implements PlugIn
         int volvalue = height * width * depth;
         String volume = "The volume is: " + volvalue + " voxels.";
         IJ.showMessage(dimensions);
-        IJ.showMessage(volume);
-        IJ.showMessage("Mensaje de prueba");
-        
+        IJ.showMessage(volume);        
     }
 }
