@@ -24,6 +24,7 @@ public class get_dimensions implements PlugIn
         String volume = "The volume is: " + volvalue + " voxels.";
         IJ.showMessage(dimensions);
         IJ.showMessage(volume);
+        IJ.showMessage("Mensaje de prueba");
         
     }
 }
