@@ -1,4 +1,3 @@
-import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Scanner;
 import java.io.File;
@@ -12,7 +11,7 @@ public class Tags extends Hashtable<Integer, String>
 	private Hashtable<Integer, String> tags;
     public Tags(String fileName)
     {
-    	Hashtable<Integer, String> tags = new Hashtable<Integer, String>(43);
+    	tags = new Hashtable<Integer, String>(43);
         try
         {
             Scanner file = new Scanner(new File(fileName));
@@ -34,15 +33,11 @@ public class Tags extends Hashtable<Integer, String>
 	 */
     public void printTags()
     {
-    	
-    	   for (Enumeration<String> e = tags.elements(); e.hasMoreElements();)
-    	   {
-    	       System.out.println(e.nextElement());
-    	   }
+    	   System.out.println(tags);
     }
     
     public static void main(String[] args){
-    	Tags tags = new Tags("C:/Users/carlos/Downloads/PFC/Atlas Toronto/etiquetas.txt");
-    	tags.printTags();
+    	Tags etiquetas = new Tags("C:/Users/carlos/Downloads/PFC/Atlas Toronto/etiquetas.txt");
+    	etiquetas.printTags();
     }
 }
