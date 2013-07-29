@@ -29,6 +29,7 @@ public class Atlas extends ImagePlus
 		IJ.showMessage(dimensions);
 		IJ.showMessage(volume);        
 	}
+	
 }
 
 
