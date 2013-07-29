@@ -1,4 +1,3 @@
-package plugins.test;
 import ij.plugin.PlugIn;
 
 /** Pops up the dimensions and number of voxels of the image

@@ -1,4 +1,4 @@
-package plugins.test;
+
 
 import ij.IJ;
 import ij.ImagePlus;
