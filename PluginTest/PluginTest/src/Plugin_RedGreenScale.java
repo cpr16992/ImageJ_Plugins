@@ -9,7 +9,7 @@ public class Plugin_RedGreenScale implements PlugIn
 	public void run(String arg) 
 	{ 
 		int width = 256; 
-		int height = 256; 
+		int height = 256;
 		ImageProcessor ip = new ColorProcessor(width, height); 
 		for(int y = 0; y < height; y++)
 		{
