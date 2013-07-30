@@ -25,6 +25,8 @@ public class RGB_cube implements PlugIn
 				}
 			}
 			is.addSlice(ip);
+			ImagePlus imp = new ImagePlus("Result image", is); 
+			imp.show();
 		}
 		ImagePlus imp = new ImagePlus("Result image", is); 
 		imp.show();
