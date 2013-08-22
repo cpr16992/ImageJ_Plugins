@@ -26,10 +26,9 @@ public class Plugin_ScaleCheckBox extends PlugInFrame {
 			IJ.error("PlugIn canceled!");
 			return;
 		}
-		int width = 256;//(int) gd.getNextNumber(); 
-		int height = 256;//(int) gd.getNextNumber();
+		int width = 256; 
+		int height = 256;
 		String colour = gd.getNextChoice();
-		System.out.println(colour);
 		if(colour.equals("red"))
 			{ 
 				ImageProcessor ip = new ColorProcessor(width, height); 
