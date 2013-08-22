@@ -27,9 +27,10 @@ public class Plugin_ScaleCheckBox extends PlugInFrame {
 			return;
 		}
 		int width = 256;//(int) gd.getNextNumber(); 
-		int height = 256;//(int) gd.getNextNumber(); 
-		System.out.println(gd.getNextChoice());
-		if(gd.getNextChoice().equals("red"))
+		int height = 256;//(int) gd.getNextNumber();
+		String colour = gd.getNextChoice();
+		System.out.println(colour);
+		if(colour.equals("red"))
 			{ 
 				ImageProcessor ip = new ColorProcessor(width, height); 
 				for(int y = 0; y < height; y++)
@@ -42,8 +43,8 @@ public class Plugin_ScaleCheckBox extends PlugInFrame {
 				ImagePlus imp = new ImagePlus("Result image", ip); 
 				imp.show();
 			}
-		else if (gd.getNextChoice().equals("green"))
-		{
+		else if (colour.equals("green"))
+		{ 
 			ImageProcessor ip = new ColorProcessor(width, height); 
 			for(int y = 0; y < height; y++)
 			{
@@ -55,7 +56,7 @@ public class Plugin_ScaleCheckBox extends PlugInFrame {
 			ImagePlus imp = new ImagePlus("Result image", ip); 
 			imp.show();
 		}
-		else if (gd.getNextChoice().equals("blue"))
+		else if (colour.equals("blue"))
 		{
 			ImageProcessor ip = new ColorProcessor(width, height); 
 			for(int y = 0; y < height; y++)
